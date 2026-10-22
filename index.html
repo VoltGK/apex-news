@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APEX-NEWS | Tech, AI &amp; Hardware News</title>
+    <meta
+      name="description"
+      content="APEX-NEWS: live tech, AI, web development and hardware stories from the best sources, in one place."
+    />
+    <meta name="theme-color" content="#020617" />
+    <!-- Favicons -->
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="assets/favicon-64.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Main JS -->
+    <script src="index.js" defer></script>
+  </head>
+  <body
+    class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-amber-400 selection:text-slate-950"
+  >
+    <!-- Header / Navbar -->
+    <header
+      class="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md sticky top-0 z-40"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[4rem] py-2 flex flex-wrap items-center justify-between gap-y-2"
+      >
+        <div class="flex items-center space-x-3">
+          <a href="./" class="flex items-center space-x-2 sm:space-x-2.5" aria-label="APEX-NEWS home">
+            <img
+              src="assets/logo.png"
+              alt="APEX-NEWS logo"
+              width="40"
+              height="31"
+              class="h-7 sm:h-8 w-auto"
+            />
+            <h1 class="text-base sm:text-xl font-black tracking-wide sm:tracking-wider text-white whitespace-nowrap">
+              APEX-<span class="text-amber-400">NEWS</span>
+            </h1>
+          </a>
+          <span
+            class="hidden sm:inline-block bg-emerald-500/10 text-emerald-400 text-xs px-2.5 py-1 rounded-full border border-emerald-500/20 font-medium"
+            >Live Feed Active</span
+          >
+        </div>
+
+        <!-- Category Filter Navigation Buttons -->
+        <nav class="flex items-center justify-center space-x-1 sm:space-x-2 w-full sm:w-auto">
+          <button
+            class="nav-btn bg-amber-400 text-slate-950 px-2 sm:px-3.5 py-1.5 whitespace-nowrap rounded-lg text-xs sm:text-sm font-semibold transition-all shadow-md"
+            data-category="all"
+          >
+            All
+          </button>
+          <button
+            class="nav-btn hover:bg-slate-800 text-slate-300 px-2 sm:px-3.5 py-1.5 whitespace-nowrap rounded-lg text-xs sm:text-sm font-medium transition-all"
+            data-category="ai"
+          >
+            AI
+          </button>
+          <button
+            class="nav-btn hover:bg-slate-800 text-slate-300 px-2 sm:px-3.5 py-1.5 whitespace-nowrap rounded-lg text-xs sm:text-sm font-medium transition-all"
+            data-category="web"
+          >
+            Web Dev
+          </button>
+          <button
+            class="nav-btn hover:bg-slate-800 text-slate-300 px-2 sm:px-3.5 py-1.5 whitespace-nowrap rounded-lg text-xs sm:text-sm font-medium transition-all"
+            data-category="hardware"
+          >
+            Hardware
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow w-full py-8">
+      <div class="mb-8">
+        <h2
+          class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white"
+        >
+          Latest Tech & AI Stories
+        </h2>
+        <p class="text-slate-400 text-sm mt-1">
+          Real-time curated breakthroughs, hardware leaks, and software
+          engineering insights.
+        </p>
+      </div>
+
+      <!-- Dynamic Grid Container -->
+      <div
+        id="news-grid"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        <!-- Cards will load here dynamically -->
+      </div>
+    </main>
+
+    <!-- Newsletter Section -->
+    <section class="border-t border-slate-800 bg-slate-900/40 py-12 mt-16">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h3 class="text-xl font-bold text-white mb-2">
+          Subscribe to Our Tech Newsletter
+        </h3>
+        <p class="text-slate-400 text-sm mb-6">
+          Get weekly summaries of top artificial intelligence and software
+          engineering breakthroughs.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-3 justify-center">
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            class="bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 w-full sm:w-80"
+          />
+          <button
+            type="submit"
+            class="bg-amber-400 hover:bg-amber-500 text-slate-950 font-semibold px-6 py-2.5 rounded-lg text-sm transition-colors"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500"
+    >
+      <p>&copy; 2026 APEX-NEWS &middot; apexhybrid.online. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

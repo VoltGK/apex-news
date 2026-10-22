@@ -1,0 +1,31 @@
+/* Custom Dark Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Smooth Linear Keyframe Animation Utility for Breaking News Ticker */
+@keyframes news-ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-news-ticker {
+  animation: news-ticker 20s linear infinite;
+}
